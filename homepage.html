@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Helping Hands</title>
+    <meta charset="utf-8" />
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js"></script>
+    <link rel="stylesheet" href="homepage.css">
+</head>
+
+<body data-spy="scroll" data-target="#navbarResponsive">
+    <div id="home">
+        <nav class="navbar navbar-expand-md navbar-dark  fixed-top">
+            <div class="collapse navbar-collapse" id="navbarResponsive">
+                <h3 class="logo">HELPING HANDS </h3>
+                <ul class="navbar-nav ml-auto">
+                    <li class="nav-item">
+                        <a class="nav-link" href="#home">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#about">About</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#donate">Donate</a>
+                    </li>
+
+                    <li class="nav-item">
+                        <a class="nav-link" href="#contact">Contact</a>
+                    </li>
+                </ul>
+            </div>
+        </nav>
+    </div>
+
+    <header>
+        <div id="indicators" class="carousel slide" data-ride="carousel">
+            <ol class="carousel-indicators">
+                <li data-target="#indicators" data-slide-to="0" class="active"></li>
+                <li data-target="#indicators" data-slide-to="1"></li>
+                <li data-target="#indicators" data-slide-to="2"></li>
+            </ol>
+            <div class="carousel-inner" role="listbox">
+                <!-- Slide One-->
+                <div class="carousel-item active" style="background-image: linear-gradient(rgba(139, 137, 168, 0.445), rgba(46, 38, 38, 0.7)),url('charity.jpg')">
+                    <div class="carousel-caption d-none d-md-block">
+                        <h2 class="text"><em>Come Together <br>To Feed The Future..</em></h2>
+
+                    </div>
+                </div>
+                <!-- Slide Two-->
+                <div class="carousel-item" style="background-image:  linear-gradient(rgba(139, 137, 168, 0.445), rgba(46, 38, 38, 0.7)),url('helpinghands.jpg')">
+                    <div class="carousel-caption d-none d-md-block">
+                        <h2 class="text"><em>DONATE <br>Together we can make big difference..</em></h2>
+
+                    </div>
+                </div>
+                <!-- Slide Three-->
+                <div class="carousel-item" style="background-image: linear-gradient(rgba(139, 137, 168, 0.445), rgba(46, 38, 38, 0.7)), url('donation.jpg')">
+                    <div class="carousel-caption d-none d-md-block">
+                        <h2 class="text"><em>Small Effort <br>Make Big Change..</em></h2>
+
+                    </div>
+                </div>
+            </div>
+            <a class="carousel-control-prev" href="#indicators" role="button" data-slide="prev"> <span class="carousel-control-prev-icon" aria-hidden="true"></span> <span class="sr-only">Previous</span> </a>
+            <a class="carousel-control-next" href="#indicators" role="button" data-slide="next"> <span class="carousel-control-next-icon" aria-hidden="true"></span> <span class="sr-only">Next</span> </a>
+        </div>
+    </header>
+
+    <!--About Section-->
+    <div class="container" id="about">
+        <div class="row m-5 no-gutters shadow-lg">
+            <div class="col-md-6 d-none d-md-block ">
+                <img src="charity2.jpg" class="img-fluid" style="height:120vh;" />
+            </div>
+            <div class="col-md-6 bg-grey p-5">
+                <p style="text-align:center;font-weight:800;line-height: 2em;">Helping Hands is a Non-Profit Organization that focuses specifically on improving children’s lives.</p>
+                <p style="text-align:center;font-weight:800">“It's not how much we give but how much love we put into giving.”<br>-Mother Teresa</p>
+
+                <p style="font-weight:600">Our Mission is to build a world in which every child has the right to survival,protection, development and participation. Education is both the means as well as the end to a better life: the means because it empowers an individual to earn
+                    his/her livelihood and the end because it increases one's awareness on a range of issues – from healthcare to appropriate social behaviour to understanding one's rights – and in the process help him/her evolve as a better citizen.
+                </p>
+            </div>
+        </div>
+
+        <!--Donate-->
+
+        <div class="container" id="donate">
+            <div class="row m-5 no-gutters shadow-lg">
+                <div class="col-md-6 d-none d-md-block ">
+                    <img src="donate.png" alt="#" class="img-fluid" style="width:100vh; height:100vh;">
+
+                </div>
+                <div class="col-md-6 bg-grey p-5">
+                    <h4 style="text-align:center; font-weight:800;font-family:Georgia, 'Times New Roman', Times, serif">Raising Help To Homeless and Hopeless People. </h4>
+                    <h4 style="text-align:center;font-weight:800;font-family:Georgia, 'Times New Roman', Times, serif">"Giving is the greatest act of grace"</h4>
+                    <form class="button" id="btn">
+                        <script src="https://checkout.razorpay.com/v1/payment-button.js" data-payment_button_id="pl_HXFAK6nyfMa5F7" async>
+                        </script>
+                    </form>
+
+                </div>
+
+            </div>
+
+        </div>
+        <!--Contact-->
+        <center>
+            <footer id="contact" class="jumbotron">
+                <h2 style="font-weight:700">Contact</h2>
+                <a class="social-button linkedin" href=" https://www.linkedin.com/groups/10379184/" target="_blank"><i class="fab fa-linkedin"></i> <img src="linkedin.png"></a>
+                <a class="social-button twitter" href="https://twitter.com/nehabhange2?s=08"><i class="fab fa-twitter"></i> <img src="twwiter.png"></a>
+
+            </footer>
+        </center>
+        <script>
+            $(function() {
+                $(document).scroll(function() {
+                    var $nav = $("#mainNavbar");
+                    $nav.toggleClass("scrolled", $(this).scrollTop() > $nav.height());
+                });
+            });
+        </script>
+
+
+</body>
+
+</html>
